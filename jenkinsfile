@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                bat 'echo Build : Python - nothing to do'
+                sh 'echo "Hello World"'
             }
         }
     }
