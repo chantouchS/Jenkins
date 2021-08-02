@@ -1,11 +1,14 @@
 pipeline {
     agent any 
     stages {
-        stage('Deploy') {
+        stage('Build') {
             steps {
-                sh 'pwd'
-                sh 'export'
-                sh 'az-webapp-create-py.sh'
+                sh 'echo "Build : Python - nothing to do"'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'echo "Test : not implemented"'
             }
         }
     }
