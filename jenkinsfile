@@ -1,10 +1,14 @@
 pipeline {
-    agent any
-
+    agent any 
     stages {
-        stage('Hello') {
+        stage('Build') {
             steps {
-                sh 'echo "Hello World"'
+                sh 'echo "Build : Python - nothing to do"'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'echo "Test : not implemented"'
             }
         }
     }
