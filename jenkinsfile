@@ -11,5 +11,12 @@ pipeline {
                 sh 'echo "Test : not implemented"'
             }
         }
+        stage('Deploy') {
+            steps {
+                sh 'pwd'
+                sh 'export'
+                sh 'az-webapp-create-py.sh'
+            }
+        }
     }
 }
